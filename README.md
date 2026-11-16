@@ -31,3 +31,15 @@ Training 6,471
 Validation 548
 
 Total 7,019
+<h2 align="center"><strong>3. useage </strong></h2>
+<h2 align="center"><strong>4. Baseline Model </strong></h2>
+
+The baseline model uses YOLO11n with pretrained weights (`yolo11n.pt`) and is fine-tuned on the VisDrone2019-DET dataset.
+
+The model was trained using an input image resolution of 640 × 640 with 50 epochs, a batch size of 8, and a random seed of 42. Training was performed on Google Colab using GPU acceleration.
+
+The purpose of the baseline model is to establish a reference for evaluating subsequent model improvements.
+
+At Epoch 50, the baseline model achieved an mAP of 0.1733 (17.33%), a Precision of 0.4420 (44.20%), and a Recall of 0.3222 (32.22%).
+
+These results provide a reference for evaluating whether increasing the input image resolution improves object detection performance.
