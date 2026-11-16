@@ -7,4 +7,15 @@ This project investigates the performance of YOLO11 on the VisDrone2019-DET data
 
 The project focuses on training a baseline model, analyzing training behavior, conducting controlled experiments, and evaluating whether changes in image resolution improve object detection performance.
 
-<h2 align="center"><strong>1. Model and data </strong></h2>
+<h2 align="center"><strong>2. Model and data </strong></h2>
+This project uses YOLO11n, a lightweight object detection model developed by Ultralytics. It provides efficient object detection with relatively low computational requirements.
+
+The model was initialized with pretrained weights (yolo11n.pt) and fine-tuned on the VisDrone dataset.
+
+Two configurations were tested:
+
+Baseline: Image size 640 × 640.
+
+Experiment: Image size 960 × 960.
+
+Both models were trained for 50 epochs with a batch size of 8.
