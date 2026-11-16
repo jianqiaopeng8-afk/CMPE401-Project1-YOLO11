@@ -25,18 +25,9 @@ It presents challenges such as small objects, crowded scenes, and complex backgr
 
 The dataset contains 10 object categories and was prepared for YOLO11 training by converting the original annotations into YOLO format.
 
-Dataset Split
 
-Images
+Training 6,471
 
-Training
+Validation 548
 
-6,471
-
-Validation
-
-548
-
-Total
-
-7,019
+Total 7,019
