@@ -43,3 +43,10 @@ The purpose of the baseline model is to establish a reference for evaluating sub
 At Epoch 50, the baseline model achieved an mAP of 0.1733 (17.33%), a Precision of 0.4420 (44.20%), and a Recall of 0.3222 (32.22%).
 
 These results provide a reference for evaluating whether increasing the input image resolution improves object detection performance.
+<p align="center">
+  <img src="401%20project%201%20baseline.png" width="750">
+</p>
+
+<p align="center">
+  <strong>Figure 1. Baseline Model Training Results</strong>
+</p>
