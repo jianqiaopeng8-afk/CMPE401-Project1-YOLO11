@@ -7,3 +7,4 @@ This project investigates the performance of YOLO11 on the VisDrone2019-DET data
 
 The project focuses on training a baseline model, analyzing training behavior, conducting controlled experiments, and evaluating whether changes in image resolution improve object detection performance.
 
+<h2 align="center"><strong>1. Model and data </strong></h2>
