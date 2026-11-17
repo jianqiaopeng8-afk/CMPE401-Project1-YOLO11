@@ -148,6 +148,11 @@ A possible explanation is that higher-resolution images preserved additional spa
 However, increasing image resolution may also increase GPU memory usage and computational cost.
 
 Therefore, the improvement in detection performance should be considered alongside the additional computational requirements.
+<p align="center">
+  <img src="loss_comparison.png" width="850">
+</p>
+
+<p align="center">
 
 8.6 Conclusion
 
