@@ -53,14 +53,4 @@ These results provide a reference for evaluating whether increasing the input im
 
 <h2 align="center">5. Loss Curve and Fitting Analysis</h2>
 
-The training and validation loss curves of the baseline YOLO11n model were analyzed over 50 epochs.
-
-Convergence Analysis: Both training and validation losses decreased steadily. Training loss decreased from approximately 4.8 to 3.34, while validation loss decreased from approximately 4.12 to 3.41. The curves gradually flattened, indicating that the model was approaching convergence.
-
-Overfitting Analysis: No significant overfitting was observed because the validation loss continued to decrease rather than increase. Although training loss became slightly lower than validation loss near the end, the difference remained small.
-
-Underfitting Analysis: The relatively low detection performance (mAP = 0.1733, Precision = 0.4420, Recall = 0.3222) suggests that the model may still have limited detection capability. However, the loss curves alone do not establish severe underfitting.
-
-Possible Causes: The dataset contains 7,019 images, including many small and densely distributed objects. Additionally, YOLO11n has a lightweight architecture with limited model capacity, which may restrict its ability to learn complex visual features.
-
-Overall, the baseline model demonstrated stable convergence without clear evidence of severe overfitting, but its detection performance indicates room for improvement.
+The baseline YOLO11n model showed stable convergence over 50 epochs, with training loss decreasing from approximately 4.8 to 3.34 and validation loss decreasing from 4.12 to 3.41. Both curves gradually flattened, indicating that the model was approaching convergence. No significant overfitting was observed because validation loss continued to decrease without a sustained upward trend. However, the relatively low mAP of 0.1733, Precision of 0.4420, and Recall of 0.3222 suggest that the model's detection capability remains limited, although the loss curves alone do not confirm severe underfitting. This may be related to the complexity of the VisDrone dataset, which contains 7,019 images with many small and densely distributed objects, as well as the limited model capacity of the lightweight YOLO11n architecture. Overall, the baseline model converged steadily without obvious overfitting, but further improvement is needed to achieve better detection performance.
