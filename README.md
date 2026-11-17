@@ -31,7 +31,25 @@ Training 6,471
 Validation 548
 
 Total 7,019
-<h2 align="center"><strong>3. useage </strong></h2>
+<h2 align="center"><strong>3. Useage </strong></h2>
+
+This project was developed and executed using Google Colab with GPU acceleration and the Ultralytics YOLO11 framework.
+
+To reproduce the experiments, download the project files from the Google Drive link below and open the provided Jupyter Notebook (.ipynb) in Google Colab.
+
+Install the required dependencies using `pip install ultralytics`, mount Google Drive, and configure the dataset path in `visdrone.yaml`.
+
+Run the notebook cells in order to prepare the dataset, train the baseline YOLO11n model at 640 × 640 resolution, and conduct the controlled experiment at 960 × 960 resolution. Both models were trained for 50 epochs with a batch size of 8 and a random seed of 42.
+
+The training results, loss curves, and trained model weights are saved in the project folders. The fine-tuned model weights can be used for further evaluation without retraining.
+
+[Access Project Files and Trained Models](https://drive.google.com/drive/folders/1aAr7dT9nYkOKcM4v2ceVUxIML5VaRscT?usp=drive_link)
+
+For users who only want to view the experimental results without downloading the complete project, the results can be accessed directly through the result-source branch of the GitHub repository.
+
+[View Experimental Results (result-source branch)](https://github.com/jianqiaopeng8-afk/CMPE401-Project1-YOLO11/tree/result-source)
+
+
 <h2 align="center"><strong>4. Baseline Model </strong></h2>
 
 The baseline model uses YOLO11n with pretrained weights (`yolo11n.pt`) and is fine-tuned on the VisDrone2019-DET dataset.
