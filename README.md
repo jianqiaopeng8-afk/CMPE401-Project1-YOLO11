@@ -91,6 +91,75 @@ At Epoch 50, the baseline model achieved a Precision of 0.4420, Recall of 0.3222
 
 Compared with the baseline, Precision increased by approximately 0.0768, Recall increased by 0.0803, and mAP50-95 increased by 0.0673. The relative improvement in mAP50-95 was approximately 38.8%.
 
+<h2 align="center">7. Iterative Model Improvement</h2>
+
+8.1 Baseline Model
+
+The baseline YOLO11n model was trained on the VisDrone2019-DET dataset using an input image resolution of 640 × 640.
+
+After 50 training epochs, the baseline model achieved a Precision of 0.4420, Recall of 0.3222, and mAP50-95 of 0.1733.
+
+These results indicated that the baseline model had room for improvement in detecting objects in aerial images.
+
+8.2 Experimental Settings
+
+An improvement experiment was conducted to investigate whether increasing input image resolution could improve detection performance.
+
+The baseline and improved models used the same YOLO11n architecture, pretrained weights, dataset, 50 training epochs, batch size of 8, and random seed of 42.
+
+Input image resolution was selected as the primary variable for modification.
+
+8.3 Controlled Modification
+
+The input image resolution was increased from 640 × 640 to 960 × 960.
+
+This modification was motivated by CNN feature extraction principles. The VisDrone dataset contains many small and densely distributed objects, which may lose important spatial information when images are resized to lower resolutions.
+
+Using higher-resolution images may preserve more details of small objects and help the CNN extract more useful features for object detection.
+
+All other listed experimental settings were kept consistent to isolate the effect of input resolution.
+
+8.4 Quantitative Comparison
+
+The following table compares the detection performance of the baseline and improved models after 50 training epochs.
+
+| Metric | Baseline (640 × 640) | Improved (960 × 960) |
+|---|---:|---:|
+| Precision | 0.4420 | 0.5187 |
+| Recall | 0.3222 | 0.4025 |
+| mAP50-95 | 0.1733 | 0.2406 |
+
+The improved model achieved higher values across all three evaluation metrics.
+
+Precision increased by approximately 0.0767, Recall increased by 0.0803, and mAP50-95 increased by 0.0673.
+
+The relative improvement in mAP50-95 was approximately 38.8%.
+
+8.5 Performance Discussion
+
+The experimental results indicate that increasing the input image resolution improved the detection performance of YOLO11n under the tested conditions.
+
+The higher Precision suggests that a greater proportion of predicted detections were correct, while the higher Recall indicates that more ground-truth objects were successfully detected.
+
+The increase in mAP50-95 demonstrates improved overall detection performance across multiple IoU thresholds.
+
+A possible explanation is that higher-resolution images preserved additional spatial details, allowing the model to extract more informative features from small objects.
+
+However, increasing image resolution may also increase GPU memory usage and computational cost.
+
+Therefore, the improvement in detection performance should be considered alongside the additional computational requirements.
+
+8.6 Conclusion
+
+This improvement cycle followed the process of baseline evaluation, experimental setup, controlled modification, performance evaluation, analysis, and conclusion.
+
+Increasing the input resolution from 640 × 640 to 960 × 960 improved Precision, Recall, and mAP50-95 on the VisDrone2019-DET dataset.
+
+The mAP50-95 increased by approximately 38.8% relative to the baseline, demonstrating that higher input resolution was an effective modification under the tested conditions.
+
+This experiment highlights the importance of preserving spatial information during CNN feature extraction, particularly when detecting small objects in aerial images.
+
+
 These results suggest that increasing the input image resolution from 640 × 640 to 960 × 960 improved detection performance on the VisDrone dataset. The higher resolution may help the model preserve more information about small objects, although it also requires greater computational resources.
 
 Overall, the controlled experiment demonstrates that input image resolution is an important factor affecting YOLO11n detection performance, particularly for aerial images containing small and densely distributed objects.
