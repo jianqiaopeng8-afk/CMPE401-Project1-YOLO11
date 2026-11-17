@@ -79,22 +79,6 @@ This may be related to the complexity of the VisDrone dataset, which contains 7,
 
 Overall, the baseline model demonstrated stable convergence without obvious overfitting, but its detection performance indicates that further improvements are needed.
 
-<h2 align="center">7. Structured Experimental Design</h2>
-
-A controlled experiment was conducted to investigate the effect of input image resolution on YOLO11n object detection performance using the VisDrone2019-DET dataset.
-
-The baseline model was trained at an image resolution of 640 × 640, while the experimental model used 960 × 960. Both models used the same YOLO11n architecture, pretrained weights, dataset, 50 training epochs, batch size of 8, and random seed of 42. Input image resolution was the primary variable changed in this experiment.
-
-The purpose of increasing the image resolution was to preserve more visual details of small objects in aerial images, potentially improving detection performance.
-
-At Epoch 50, the baseline model achieved a Precision of 0.4420, Recall of 0.3222, and mAP50-95 of 0.1733. The experimental model achieved a Precision of 0.5187, Recall of 0.4025, and mAP50-95 of 0.2406.
-
-Compared with the baseline, Precision increased by approximately 0.0768, Recall increased by 0.0803, and mAP50-95 increased by 0.0673. The relative improvement in mAP50-95 was approximately 38.8%.
-
-These results suggest that increasing the input image resolution from 640 × 640 to 960 × 960 improved detection performance on the VisDrone dataset. The higher resolution may help the model preserve more information about small objects, although it also requires greater computational resources.
-
-Overall, the controlled experiment demonstrates that input image resolution is an important factor affecting YOLO11n detection performance, particularly for aerial images containing small and densely distributed objects.
-
 <h2 align="center">6. Structured Experimental Design</h2>
 
 A controlled experiment was conducted to investigate the effect of input image resolution on YOLO11n object detection performance using the VisDrone2019-DET dataset.
