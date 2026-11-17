@@ -44,12 +44,13 @@ At Epoch 50, the baseline model achieved an mAP of 0.1733 (17.33%), a Precision 
 
 These results provide a reference for evaluating whether increasing the input image resolution improves object detection performance.
 <p align="center">
-  <img src="401%20project%201%20baseline.png" width="750">
+  <img src="https://github.com/jianqiaopeng8-afk/CMPE401-Project1-YOLO11/blob/result-pictures/401%20project%201%20baseline.png?raw=true" width="750">
 </p>
 
 <p align="center">
-  <strong>Figure 1. Baseline Model Training Results</strong>
+  Figure 1. Baseline Model Training Results
 </p>
+
 <h2 align="center">5. Loss Curve and Fitting Analysis</h2>
 
 The training and validation loss curves of the baseline YOLO11n model were analyzed over 50 epochs.
