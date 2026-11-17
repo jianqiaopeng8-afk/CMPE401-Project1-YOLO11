@@ -53,4 +53,10 @@ These results provide a reference for evaluating whether increasing the input im
 
 <h2 align="center">5. Loss Curve and Fitting Analysis</h2>
 
-The baseline YOLO11n model showed stable convergence over 50 epochs, with training loss decreasing from approximately 4.8 to 3.34 and validation loss decreasing from 4.12 to 3.41. Both curves gradually flattened, indicating that the model was approaching convergence. No significant overfitting was observed because validation loss continued to decrease without a sustained upward trend. However, the relatively low mAP of 0.1733, Precision of 0.4420, and Recall of 0.3222 suggest that the model's detection capability remains limited, although the loss curves alone do not confirm severe underfitting. This may be related to the complexity of the VisDrone dataset, which contains 7,019 images with many small and densely distributed objects, as well as the limited model capacity of the lightweight YOLO11n architecture. Overall, the baseline model converged steadily without obvious overfitting, but further improvement is needed to achieve better detection performance.
+The baseline YOLO11n model showed stable convergence over 50 epochs. The training loss decreased from approximately 4.8 to 3.34, while the validation loss decreased from 4.12 to 3.41. Both curves gradually flattened, indicating that the model was approaching convergence.
+
+No significant overfitting was observed because the validation loss continued to decrease without a sustained upward trend. However, the relatively low mAP of 0.1733, Precision of 0.4420, and Recall of 0.3222 suggest that the model's detection capability remains limited, although the loss curves alone do not confirm severe underfitting.
+
+This may be related to the complexity of the VisDrone dataset, which contains 7,019 images, including 6,471 training images and 548 validation images. The dataset contains many small and densely distributed objects, making detection more challenging. Additionally, YOLO11n is a lightweight model with limited capacity, which may restrict its ability to learn complex visual features.
+
+Overall, the baseline model demonstrated stable convergence without obvious overfitting, but its detection performance indicates that further improvements are needed.
