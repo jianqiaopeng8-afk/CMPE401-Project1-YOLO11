@@ -93,7 +93,7 @@ Compared with the baseline, Precision increased by approximately 0.0768, Recall 
 
 <h2 align="center">7. Iterative Model Improvement</h2>
 
-8.1 Baseline Model
+7.1 Baseline Model
 
 The baseline YOLO11n model was trained on the VisDrone2019-DET dataset using an input image resolution of 640 × 640.
 
@@ -101,7 +101,7 @@ After 50 training epochs, the baseline model achieved a Precision of 0.4420, Rec
 
 These results indicated that the baseline model had room for improvement in detecting objects in aerial images.
 
-8.2 Experimental Settings
+7.2 Experimental Settings
 
 An improvement experiment was conducted to investigate whether increasing input image resolution could improve detection performance.
 
@@ -109,7 +109,7 @@ The baseline and improved models used the same YOLO11n architecture, pretrained 
 
 Input image resolution was selected as the primary variable for modification.
 
-8.3 Controlled Modification
+7.3 Controlled Modification
 
 The input image resolution was increased from 640 × 640 to 960 × 960.
 
@@ -119,7 +119,7 @@ Using higher-resolution images may preserve more details of small objects and he
 
 All other listed experimental settings were kept consistent to isolate the effect of input resolution.
 
-8.4 Quantitative Comparison
+7.4 Quantitative Comparison
 
 The following table compares the detection performance of the baseline and improved models after 50 training epochs.
 
@@ -135,7 +135,7 @@ Precision increased by approximately 0.0767, Recall increased by 0.0803, and mAP
 
 The relative improvement in mAP50-95 was approximately 38.8%.
 
-8.5 Performance Discussion
+7.5 Performance Discussion
 
 The experimental results indicate that increasing the input image resolution improved the detection performance of YOLO11n under the tested conditions.
 
@@ -154,7 +154,7 @@ Therefore, the improvement in detection performance should be considered alongsi
 
 <p align="center">
 
-8.6 Conclusion
+7.6 Conclusion
 
 This improvement cycle followed the process of baseline evaluation, experimental setup, controlled modification, performance evaluation, analysis, and conclusion.
 
@@ -168,3 +168,19 @@ This experiment highlights the importance of preserving spatial information duri
 These results suggest that increasing the input image resolution from 640 × 640 to 960 × 960 improved detection performance on the VisDrone dataset. The higher resolution may help the model preserve more information about small objects, although it also requires greater computational resources.
 
 Overall, the controlled experiment demonstrates that input image resolution is an important factor affecting YOLO11n detection performance, particularly for aerial images containing small and densely distributed objects.
+
+<h2 align="center">8. Overall Conclusion</h2>
+
+This project investigated the performance of YOLO11n for object detection on the VisDrone2019-DET dataset, with a focus on detecting small objects in aerial images.
+
+A baseline YOLO11n model was trained using an input resolution of 640 × 640 for 50 epochs. The training and validation loss curves showed a gradual decrease and stabilization, indicating that the model was learning and approaching convergence without clear evidence of severe overfitting.
+
+A controlled experiment was then conducted by increasing the input resolution from 640 × 640 to 960 × 960 while keeping the other experimental settings consistent.
+
+The experimental model achieved a Precision of 0.5187, Recall of 0.4025, and mAP50-95 of 0.2406, compared with the baseline values of 0.4420, 0.3222, and 0.1733, respectively. The relative improvement in mAP50-95 was approximately 38.8%.
+
+The loss comparison further demonstrated that the higher-resolution model achieved lower training and validation losses by the end of training. These results suggest that increasing input resolution can improve feature extraction and detection performance, particularly for aerial images containing small objects.
+
+However, the overall detection accuracy remains limited, and higher input resolutions may require additional computational resources. Future improvements could include experimenting with larger YOLO models, data augmentation, learning rate scheduling, and additional training configurations.
+
+Overall, this project demonstrated the importance of controlled experimentation, loss curve analysis, and iterative model improvement in deep learning. The results showed that input image resolution is an important factor affecting YOLO11n detection performance on the VisDrone2019-DET dataset.
