@@ -148,11 +148,15 @@ A possible explanation is that higher-resolution images preserved additional spa
 However, increasing image resolution may also increase GPU memory usage and computational cost.
 
 Therefore, the improvement in detection performance should be considered alongside the additional computational requirements.
+
 <p align="center">
-  <img src="loss_comparison.png" width="850">
+  <img src="https://raw.githubusercontent.com/jianqiaopeng8-afk/CMPE401-Project1-YOLO11/result-pictures/loss_comparison.png" width="850">
 </p>
 
 <p align="center">
+  Figure 2. YOLO11n Loss Comparison: 640 vs 960
+</p>
+
 
 7.6 Conclusion
 
